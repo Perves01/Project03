@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+html::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+img{
+    width: 100%;
+    display: block;
+}
+section,
+header,
+footer{
+    padding: 120px 0;
+}
+h1::after,
+h1::before{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.row{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+/*============HEADER SECTION=============*/
+.header-bg{
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url('img/header-bg.jpg') no-repeat center / 100% 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('img/header-bg.jpg') no-repeat center / 100% 100%;
+    height: 100vh;
+    color: #fff;
+}
+.header-logo{
+    float: left;
+}
+.header-menu{
+    float: right;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+.header-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+.header-box h1{
+    font-size: 270%;
+    text-transform: uppercase;
+    width: 30%;
+    margin: auto;
+}
+.header-box p{
+    font-size: 125%;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.about-bg{
+      background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url('img/about.jpg') no-repeat center / 100% 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('img/about.jpg') no-repeat center / 100% 100%;
+     color: #fff;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+}
+.about-box{
+    width: 100%;
+    text-align: left;
+    margin-top: 10%;
+}
+.about-box h2{
+    font-size: 150%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-box p{
+    font-size: 90%;
+}
+.btn a{
+    background: red;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+.btn:hover,
+.btn a:hover{
+    color: #fff;
+    display: inline-block;
+}
+.about-img{
+    width: 100%;
+    display: block;
+}
+.about-img img{
+    width: 400px;
+    border-radius: 50%;
+}
+.working-bg{
+    background: #f6f6f6;
+    height: 100vh;
+}
+.working-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+.working-box h2{
+    font-size: 200%;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.working-box p{
+    font-size: 100%;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.box-1{
+    width: 100%;
+    height: 280px;
+    background: red;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.box-1 p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    color: #fff;
+    text-transform: capitalize;
+}
+.box-1 img{
+    width: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: auto;
+}
+.education-bg{
+    background: #2b6879;
+    height: auto;
+    color: #fff;
+}
+.education-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 40px;
+    text-align: left;
+}
+.education-con-bg{
+    background: #5d657e;
+}
+.education-box{
+     margin: 40px 20px;
+}
+.education-box h3{
+    font-size: 150%;
+    margin: 10px 0
+}
+.education-box h4{
+    font-size: 100%;
+    margin: 10px 0;
+}
+.education-box h5{
+    font-size: 90%;
+    margin: 10px 0;
+}
+.education-box p{
+    font-size: 80%;
+    margin: 10px 0;
+}
+.latest-grid{
+   display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+}
+.latest-work-bg{
+    background: #ccc;
+    height: 100vh;
+}
+.latest-work-box h2{
+    font-size: 200%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.latest-work-box p{
+    font-size: 100%;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.latest-box{
+    width: 100%;
+    height: 100%;
+}
+.latest-box img{
+    width: 100%;
+    height: 25vh;
+    border: 1px solid #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.latest-work img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.signature-bg{
+    background: -webkit-gradient( linear,left top, left bottom,from(rgba(100, 203, 192, .4)),to(rgba(100, 203, 192, .9)));
+    background: linear-gradient( rgba(100, 203, 192, .4),rgba(100, 203, 192, .9));
+}
+.quote-icon i{
+    font-size: 320%;
+    margin-bottom: 30px;
+    color: #317688;
+}
+.signature-box p{
+    font-size: 90%;
+    text-align: justify;
+}
+.signature-sine{
+    width: 20%;
+    margin: auto;    
+    margin-top: 15px;
+}
+.signature-box h4{
+    font-size: 80%;
+    margin-top: 10px;
+}
+.signature-box h5{
+    font-size: 70%;
+    margin-top: 10px;
+}
+.form-section-bg{
+        background: url('img/from-section.jpg') no-repeat center / 100% 100%;
+        background-attachment: fixed;
+}
+.form-section-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+}
+.form-item{
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+    text-align: left;
+    color: #fff;
+    padding: 30px 20px;
+}
+label{
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+.form-section-input h3{
+    text-transform: capitalize;
+    font-size: 200%;
+}
+.form-section-input,
+input,
+textarea{
+    width: 100%;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
+.addrees h3{
+   font-size: 150%; 
+    margin-bottom: 15px;
+    text-transform:capitalize;
+}
+.addrees p{
+   font-size: 90%;
+    margin-bottom: 15px;
+}
+.phone h3{
+    font-size: 150%; 
+    margin-bottom: 15px;
+    text-transform:capitalize;
+}
+.phone p{
+     font-size: 90%;
+    margin-bottom: 15px;
+}
+.website h3{
+     font-size: 150%; 
+    margin-bottom: 15px;
+    text-transform:capitalize;
+}
+.website a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer{
+    
+}
+.footer ul li {
+    display: inline-block;
+}
+.footer ul li a {
+    color: #bbd;
+    font-size: 300%;
+    margin: 0 30px;
+}
+.footer ul li:hover a {
+    color: #000;
+}
+.copyright {
+    color: #000;
+    font-size: 90%;
+    margin-top: 60px;
+}
